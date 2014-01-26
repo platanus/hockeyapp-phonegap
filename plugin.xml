@@ -19,13 +19,13 @@
             </feature>
         </config-file>
          
-        <!-- amend manifest file: add the AuthorisationService, CommandQueueService, HeartbeatService -->
+        <!-- amend manifest file application tag to include the Update and Feedback activities -->
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity android:name="net.hockeyapp.android.UpdateActivity" />
-            
+            <activity android:name="net.hockeyapp.android.FeedbackActivity" />
         </config-file>
         
-         <!-- permissions -->
+         <!-- permissions required for HockeyApp access - INTERNET, and WRITE_EXTERNAL_STORAGE -->
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.INTERNET" />
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
