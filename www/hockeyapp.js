@@ -12,7 +12,7 @@ var HockeyApp = {
     },
 
     // triggers the getfeedback activity (NB. HockeyApp must be initialised first!)
-    getFeedback: function(SuccessCallback, errorCallback) {
+    getFeedback: function(successCallback, errorCallback) {
         cordova.exec(
             successCallback,        // success callback function
             errorCallback,          // error callback function
