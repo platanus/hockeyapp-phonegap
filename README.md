@@ -7,7 +7,9 @@ See here for more information:
 http://support.hockeyapp.net/kb/client-integration-android-other-platforms/hockeyapp-for-android-sdk
 
 Install by pointing phonegap/cordova/plugman at this repository, eg.
+```
 phonegap plugin add https://github.com/instantiator/hockeyapp-phonegap.git
+```
 
 The plugin creates a HockeyApp javascript object that's available to your application after deviceready has fired.
 
