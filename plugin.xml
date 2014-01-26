@@ -3,7 +3,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="com.flt.hockeyapp" version="0.1.0">
     <name>hockeyapp-phonegap</name>
     <description>Integrates the Android HockeyApp API with PhoneGap</description>
-    <license>free, whatever</license>
+    <license>free, whatever - I assume HockeyApp want this, and I couldn't care less what you do with it</license>
 
     <!-- instruct Phonegap to provide the HockeyApp javascript object --> 
     <js-module src="www/hockeyapp.js" name="HockeyApp">
