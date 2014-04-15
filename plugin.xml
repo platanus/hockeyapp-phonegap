@@ -24,12 +24,13 @@
 		<header-file src="src/ios/HockeyAppPlugin.h" />
 		<source-file src="src/ios/HockeyAppPlugin.m" />
 
-		<!-- Resoucres -->
+		<!-- Resoucres
 		<resource-file src="src/ios/HockeySDK.embeddedframework/HockeySDK.xcconfig" />
 		<resource-file src="src/ios/HockeySDK.embeddedframework/HockeySDKResources.bundle" />
+		-->
 
         <!-- Frameworks -->
-        <source-file src="src/ios/HockeySDK.embeddedframework/HockeySDK.framework" target-dir="HockeySDK.embeddedframework" framework="true" />
+        <framework src="src/ios/HockeySDK.embeddedframework/HockeySDK.framework" custom="true" />
 
 		<!-- System frameworks -->
 		<framework src="CoreText.framework" />

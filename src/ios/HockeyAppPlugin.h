@@ -6,12 +6,12 @@
 //
 //
 
-#import <Cordova/Cordova.h>
+#import <Cordova/CDV.h>
 #import <HockeySDK/HockeySDK.h>
 
 @interface HockeyAppPlugin : CDVPlugin
 
-- (void) init(CDVInvokedUrlCommand *)command;
-- (void) getFeedback(CDVInvokedUrlCommand *)command;
+- (void) init:(CDVInvokedUrlCommand *)command;
+- (void) getFeedback:(CDVInvokedUrlCommand *)command;
 
 @end

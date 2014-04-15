@@ -12,18 +12,19 @@
 {
 	// match specifics
 	NSString *APP_ID;
-	bool CHECK_CRASHES = false;
-	bool CHECK_UPDATES = false;
+	bool CHECK_CRASHES;
+	bool CHECK_UPDATES;
 }
 
+@end
 @implementation HockeyAppPlugin
 
-- (void) init(CDVInvokedUrlCommand *)command
+- (void) init:(CDVInvokedUrlCommand *)command
 {
 	NSLog(@"Args: %@", command.arguments);
 }
 
-- (void) getFeedback(CDVInvokedUrlCommand *)command
+- (void) getFeedback:(CDVInvokedUrlCommand *)command
 {
 
 }
