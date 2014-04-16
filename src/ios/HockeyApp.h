@@ -7,7 +7,6 @@
 //
 
 #import <Cordova/CDV.h>
-#import <HockeySDK/HockeySDK.h>
 
 @interface HockeyApp : CDVPlugin
 
