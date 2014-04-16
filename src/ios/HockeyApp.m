@@ -59,6 +59,8 @@
 		[[BITHockeyManager sharedHockeyManager] configureWithIdentifier:APP_ID];
 		[[BITHockeyManager sharedHockeyManager] startManager];
 		[[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
+        [BITHockeyManager sharedHockeyManager].disableCrashManager = CHECK_CRASHES ? NO : YES;
+        [BITHockeyManager sharedHockeyManager].disableUpdateManager = CHECK_UPDATES ? NO : YES;
 
 		pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
 	} else {
