@@ -30,7 +30,7 @@
 		-->
 
         <!-- Frameworks -->
-        <framework src="src/ios/HockeySDK.embeddedframework/HockeySDK.framework" custom="true" />
+        <framework src="libs/ios/HockeySDK.embeddedframework/HockeySDK.framework" custom="true" />
 
 		<!-- System frameworks -->
 		<framework src="CoreText.framework" />
