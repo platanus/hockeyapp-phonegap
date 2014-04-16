@@ -5,7 +5,7 @@ var HockeyApp = {
         cordova.exec(
             successCallback,        // success callback function
             errorCallback,          // error callback function
-            'HockeyAppPlugin',      // map to java class
+            'HockeyApp',      // map to java class
             'init',                 // action
             args                    // array of custom arguments
         );
@@ -16,7 +16,7 @@ var HockeyApp = {
         cordova.exec(
             successCallback,        // success callback function
             errorCallback,          // error callback function
-            'HockeyAppPlugin',      // map to java class
+            'HockeyApp',      // map to java class
             'getFeedback',          // action
             []                      // no arguments
         );

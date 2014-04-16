@@ -1,4 +1,4 @@
-package com.flt.hockeyapp;
+package com.hockeyapp.cordova;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
@@ -14,11 +14,11 @@ import net.hockeyapp.android.UpdateManager;
 
 /**
  * Plugin for interacting with the net.hockeyapp.android classes and services.
- * 
+ *
  * @author Lewis Westbury
  */
-public class HockeyAppPlugin extends CordovaPlugin {
-	private static String TAG = "HockeyAppPlugin";
+public class HockeyApp extends CordovaPlugin {
+	private static String TAG = "HockeyApp";
 
 	// configuration
 	public static String APP_ID = null;
@@ -26,7 +26,7 @@ public class HockeyAppPlugin extends CordovaPlugin {
 	public static boolean CHECK_UPDATES = false;
 
 	/**
-	 * Actions the HockeyAppPlugin can parse.
+	 * Actions the HockeyApp can parse.
 	 */
 	public enum DefinedAction {
 		init, // initializes HockeyApp with APP_ID, CHECK_CRASHES, CHECK_UPDATES
@@ -74,7 +74,7 @@ public class HockeyAppPlugin extends CordovaPlugin {
 	 * <li>Retrieves the APP_ID for future actions.</li>
 	 * <li>Checks for crashes and checks for updates as specified.</li>
 	 * </ul>
-	 * 
+	 *
 	 * @param args
 	 *            a JSONArray of arguments: [ APP_ID, CHECK_CRASHES,
 	 *            CHECK_UPDATES ]
@@ -98,7 +98,7 @@ public class HockeyAppPlugin extends CordovaPlugin {
 
 	/**
 	 * Opens the Feedback activity to allow HockeyApp users to offer feedback.
-	 * 
+	 *
 	 * @throws UnsupportedOperationException
 	 *             if the APP_ID is not initialized.
 	 */

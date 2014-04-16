@@ -1,23 +1,23 @@
 //
-//  HockeyAppPlugin.m
+//  HockeyApp.m
 //  CordovaLib
 //
 //  Created by Michael Bester on 4/14/14.
 //
 //
 
-#import "HockeyAppPlugin.h"
+#import "HockeyApp.h"
 
-@interface HockeyAppPlugin()
+@interface HockeyApp()
 {
-	// match specifics
+	// Init arguments
 	NSString *APP_ID;
 	bool CHECK_CRASHES;
 	bool CHECK_UPDATES;
 }
-
 @end
-@implementation HockeyAppPlugin
+
+@implementation HockeyApp
 
 - (void) init:(CDVInvokedUrlCommand *)command
 {

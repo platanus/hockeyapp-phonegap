@@ -13,16 +13,16 @@
 	<!-- iOS -->
 	<platform name="ios">
 
-        <!-- register HockeyAppPlugin with Phonegap -->
+        <!-- register HockeyApp with Phonegap -->
 		<config-file target="config.xml" parent="/*">
-			<feature name="HockeyAppPlugin">
-				<param name="ios-package" value="HockeyAppPlugin" />
+			<feature name="HockeyApp">
+				<param name="ios-package" value="HockeyApp" />
 			</feature>
 		</config-file>
 
 		<!-- Source Code -->
-		<header-file src="src/ios/HockeyAppPlugin.h" />
-		<source-file src="src/ios/HockeyAppPlugin.m" />
+		<header-file src="src/ios/HockeyApp.h" />
+		<source-file src="src/ios/HockeyApp.m" />
 
 		<!-- Resoucres
 		<resource-file src="src/ios/HockeySDK.embeddedframework/HockeySDK.xcconfig" />
@@ -46,10 +46,10 @@
 	<!-- Android -->
     <platform name="android">
 
-        <!-- register HockeyAppPlugin with Phonegap -->
+        <!-- register HockeyApp with Phonegap -->
         <config-file target="config.xml" parent="/*">
-            <feature name="HockeyAppPlugin">
-                <param name="android-package" value="com.hockeyapp.cordova.HockeyAppPlugin"/>
+            <feature name="HockeyApp">
+                <param name="android-package" value="com.hockeyapp.cordova.HockeyApp"/>
             </feature>
         </config-file>
 
@@ -69,7 +69,7 @@
         <source-file src="libs/android/HockeySDK-3.0.1.jar" target-dir="libs" framework="true" />
 
         <!-- source code -->
-        <source-file src="src/android/HockeyAppPlugin.java" target-dir="src/com/hockeyapp/cordova/" />
+        <source-file src="src/android/HockeyApp.java" target-dir="src/com/hockeyapp/cordova/" />
 
     </platform>
 </plugin>
