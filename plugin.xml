@@ -24,10 +24,9 @@
 		<header-file src="src/ios/HockeyApp.h" />
 		<source-file src="src/ios/HockeyApp.m" />
 
-		<!-- Resoucres
-		<resource-file src="src/ios/HockeySDK.embeddedframework/HockeySDK.xcconfig" />
-		<resource-file src="src/ios/HockeySDK.embeddedframework/HockeySDKResources.bundle" />
-		-->
+		<!-- Resources -->
+		<resource-file src="libs/ios/HockeySDK.embeddedframework/Resources/HockeySDK.xcconfig" />
+		<resource-file src="libs/ios/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle" />
 
         <!-- Frameworks -->
         <framework src="libs/ios/HockeySDK.embeddedframework/HockeySDK.framework" custom="true" />
