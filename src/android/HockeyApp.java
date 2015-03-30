@@ -11,6 +11,7 @@ import android.util.Log;
 import net.hockeyapp.android.CrashManager;
 import net.hockeyapp.android.FeedbackManager;
 import net.hockeyapp.android.UpdateManager;
+import net.hockeyapp.android.CrashManagerListener;
 
 /**
  * Plugin for interacting with the net.hockeyapp.android classes and services.
@@ -87,7 +88,11 @@ public class HockeyApp extends CordovaPlugin {
 		CHECK_UPDATES = args.getBoolean(2);
 
 		if (CHECK_CRASHES) {
-			CrashManager.register(cordova.getActivity(), APP_ID);
+			CrashManager.register(cordova.getActivity(), APP_ID, new CrashManagerListener() {
+        public boolean shouldAutoUploadCrashes() {
+          return true;
+        }
+      });
 		}
 		if (CHECK_UPDATES) {
 			UpdateManager.register(cordova.getActivity(), APP_ID);

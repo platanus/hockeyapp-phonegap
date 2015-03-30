@@ -59,6 +59,7 @@
 		[[BITHockeyManager sharedHockeyManager] configureWithIdentifier:APP_ID];
 		[[BITHockeyManager sharedHockeyManager] startManager];
 		[[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
+    [[BITHockeyManager sharedHockeyManager].crashManager setCrashManagerStatus:BITCrashManagerStatusAutoSend];
         [BITHockeyManager sharedHockeyManager].disableCrashManager = CHECK_CRASHES ? NO : YES;
         [BITHockeyManager sharedHockeyManager].disableUpdateManager = CHECK_UPDATES ? NO : YES;
 
